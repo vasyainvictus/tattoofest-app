@@ -17,8 +17,8 @@ load_dotenv()
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 # ЗАГЛУШКИ: Сюда мы вставим публичные URL от VS Code
-WEB_APP_URL = "https://tattoo-fest-app-vasya.loca.lt" 
-BACKEND_URL = "https://tattoo-fest-backend-vasya.loca.lt"
+WEB_APP_URL = "https://tattoofest-app.vercel.app" 
+BACKEND_URL = "https://tattoofest-app.vercel.app/api"
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
