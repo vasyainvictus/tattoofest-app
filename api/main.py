@@ -54,3 +54,7 @@ def get_user_by_telegram_id(telegram_id: int, db: Session = Depends(get_db)):
     if not user:
         raise HTTPException(status_code=404, detail="Пользователь не найден")
     return user
+@app.get("/api/fill_database_once")
+def fill_database_once(db: Session = Depends(get_db)):
+    # ... (код для добавления пользователей) ...
+    return {"status": "База наполнена"}
