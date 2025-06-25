@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // ЗАГЛУШКА: Сюда вставим URL бэкенда от Vercel
         // Обрати внимание на /api/ в пути
-        const backendUrl = `https://your-app-name.vercel.app/api/users/by_telegram_id/${telegramId}`;
+        const backendUrl = `https:/tattoofest-app.vercel.app/api/users/by_telegram_id/${telegramId}`;
 
         fetch(backendUrl)
             // ... (остальной код fetch) ...
