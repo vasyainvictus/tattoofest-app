@@ -1,0 +1,44 @@
+/* web/style.css */
+
+/* Используем переменные цвета из палитры Telegram */
+:root {
+    --tg-theme-bg-color: var(--telegram-bg-color, #ffffff);
+    --tg-theme-text-color: var(--telegram-text-color, #000000);
+    --tg-theme-hint-color: var(--telegram-hint-color, #999999);
+    --tg-theme-link-color: var(--telegram-link-color, #2481cc);
+    --tg-theme-button-color: var(--telegram-button-color, #2481cc);
+    --tg-theme-button-text-color: var(--telegram-button-text-color, #ffffff);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 15px;
+    background-color: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color);
+}
+
+#app-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#user-info p {
+    font-size: 16px;
+    color: var(--tg-theme-hint-color);
+}
+
+#content {
+    margin-top: 20px;
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+    color: var(--tg-theme-hint-color);
+}

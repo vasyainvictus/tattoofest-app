@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <!-- Подключаем стили -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Основной контейнер нашего приложения -->
+    <div id="app-container">
+        <h1>Личный кабинет</h1>
+        
+        <!-- Сюда мы будем выводить информацию о пользователе -->
+        <div id="user-info">
+            <p>Загрузка данных...</p>
+        </div>
+
+        <!-- Разделитель -->
+        <hr>
+
+        <!-- Этот блок будет меняться в зависимости от роли -->
+        <div id="content">
+            <!-- Содержимое для судьи или участника появится здесь -->
+        </div>
+
+    </div>
+
+    <!-- 
+        Критически важный скрипт от Telegram!
+        Он должен быть подключен ПЕРЕД нашим собственным скриптом.
+        Он создает объект window.Telegram.WebApp, с которым мы будем работать.
+    -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <!-- Подключаем наш скрипт с логикой -->
+    <script src="script.js"></script>
+</body>
+</html>
