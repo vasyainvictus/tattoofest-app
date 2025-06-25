@@ -24,7 +24,7 @@ class UserResponse(BaseModel):
 app = FastAPI()
 
 # ЗАГЛУШКА ДЛЯ URL ФРОНТЕНДА
-FRONTEND_URL = "https://your-frontend-on-vercel.app"
+FRONTEND_URL = "https://tattoofest-app.vercel.app"
 
 app.add_middleware(
     CORSMiddleware,
